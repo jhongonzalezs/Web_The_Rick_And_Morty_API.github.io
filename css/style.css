@@ -1,0 +1,245 @@
+/* Contenedor de las tarjetas */
+#tarjetaPersonaje {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Tres columnas de igual ancho */
+  gap: 20px; /* Espacio entre las tarjetas */
+}
+
+/* Estilos para la tarjeta */
+.card {
+  width: 100%; /* Ancho de la tarjeta al 100% del contenedor */
+  border: 1px solid #ccc; /* Borde de la tarjeta */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  transition: transform 0.3s ease; /* Transición suave al pasar el ratón */
+  box-sizing: border-box; /* Incluir bordes y padding en el ancho */
+}
+
+/* Al pasar el ratón sobre la tarjeta */
+.card:hover {
+  transform: translateY(-5px); /* Efecto de levantamiento */
+}
+
+/* Imagen dentro de la tarjeta */
+.card img {
+  width: 100%; /* Imagen al 100% del ancho de la tarjeta */
+  border-top-left-radius: 10px; /* Bordes redondeados en la esquina superior izquierda */
+  border-top-right-radius: 10px; /* Bordes redondeados en la esquina superior derecha */
+}
+
+/* Cuerpo de la tarjeta */
+.card-body {
+  padding: 20px;
+}
+
+/* Título de la tarjeta */
+.card-title {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+/* Texto de la tarjeta */
+.card-text {
+  margin-bottom: 10px;
+}
+
+/* Media query para dispositivos más pequeños */
+@media (max-width: 990px) {
+  #tarjetaPersonaje {
+    grid-template-columns: repeat(1, 1fr); /* Una sola columna en dispositivos pequeños */
+    justify-items: center; /* Centrar las tarjetas horizontalmente */
+  }
+  .card {
+    width: calc(100% - 40px); /* Reducción del ancho de la tarjeta */
+    margin: 0 auto; /* Centrar la tarjeta horizontalmente */
+  }
+}
+
+
+
+
+
+
+/* Estilos para el contenedor del select */
+.select-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px; /* Espacio en la parte inferior */
+}
+
+/* Estilos para el mensaje */
+.select-label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+/* Estilos para el select */
+#personaje {
+  width: 90%; /* Ancho del select */
+  max-width: 300px; /* Ancho máximo del select */
+  padding: 10px; /* Espacio interno */
+  font-size: 16px; /* Tamaño de la fuente */
+  border: 1px solid #ccc; /* Borde */
+  border-radius: 5px; /* Bordes redondeados */
+  appearance: none; /* Eliminar el estilo predeterminado del navegador */
+  background-color: #f8f9fa; /* Color de fondo */
+  margin-top: 5px; /* Margen superior */
+}
+
+/* Estilos para las opciones del select */
+#personaje option {
+  font-size: 16px; /* Tamaño de la fuente */
+  padding: 10px; /* Espacio interno */
+}
+
+/* Media query para dispositivos más pequeños */
+@media (max-width: 990px) {
+  .select-container {
+    width: 100%; /* Ancho del contenedor */
+    justify-content: center; /* Ancho máximo del contenedor */
+  }
+
+  #personaje {
+    width: 100%; /* Ancho del select al 100% */
+    margin-top: 0; /* Eliminar el margen superior */
+  }
+}
+
+
+
+
+main {
+	height: 80vh;
+}
+
+footer {
+	width: 100%;
+	color: white;
+  margin-top: 12px;
+}
+
+#footer-content {
+	background-color: #212121;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	padding: 3rem 3.5rem;
+}
+
+#footer-contacts h1 {
+	margin-bottom: 0.75rem;
+}
+
+#footer-social {
+	display: flex;
+	gap: 2rem;
+	margin-top: 1.5rem;
+}
+
+#footer-social .footer-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 2.5rem;
+	width: 2.5rem;
+	color: white;
+	border-radius: 50%;
+	transition: all 0.4s;
+}
+
+.footer-link {
+	text-decoration: none;
+}
+
+#footer-social .footer-link:hover {
+	opacity: 0.8;
+}
+
+#instagram {
+	background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook {
+	background-color: #4267b3;
+}
+
+#whatsapp {
+	background-color: #25d366;
+}
+
+.footer-list {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+	list-style: none;
+}
+
+.footer-list .footer-link {
+	color: #d4d4d4;
+	transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover {
+	color: #EFC940;
+}
+
+#footer-subscribe {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+#input-group {
+	display: flex;
+	align-items: center;
+	background-color: black;
+	border-radius: 5px;
+}
+
+#input-group input {
+	all: unset;
+	padding: 0.75rem;
+	width: 100%;
+}
+
+#input-group button {
+	background-color: #EFC940;
+	border: none;
+	color: #212121;
+	padding: 0px 1.25rem;
+	font-size: 1.125rem;
+	height: 100%;
+	border-radius: 0px 4px 4px 0px;
+	cursor: pointer;
+	transition: all 0.4s;
+}
+
+#input-group button:hover {
+	opacity: 0.8;
+}
+
+#footer-copyright {
+	display: flex;
+	justify-content: center;
+	background-color: black;
+	font-size: 0.9rem;
+	padding: 1.5rem;
+	font-weight: 100;
+}
+
+
+@media screen and (max-width: 768px) {
+	#footer-content {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 2rem;
+	}
+}
+
+@media screen and (max-width: 426px) {
+	#footer-content {
+		grid-template-columns: repeat(1, 1fr);
+		padding: 3rem 2rem;
+	}
+}
+
+
