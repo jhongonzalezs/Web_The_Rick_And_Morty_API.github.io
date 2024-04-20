@@ -47,7 +47,7 @@ function cargarOpciones() {
       })
       .then(data => {
         // Construir las opciones del select basadas en los nombres de los personajes
-        data.results.slice(0, 20).forEach(character => {
+        data.results.slice(0, 15).forEach(character => {
           const option = document.createElement('option');
           option.value = character.id;
           option.textContent = character.name;

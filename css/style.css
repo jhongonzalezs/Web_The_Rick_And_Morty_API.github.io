@@ -1,7 +1,7 @@
 /* Contenedor de las tarjetas */
 #tarjetaPersonaje {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* Tres columnas de igual ancho */
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual ancho */
   gap: 20px; /* Espacio entre las tarjetas */
 }
 
